@@ -232,7 +232,7 @@
     .our-team .team-info{ bottom: 30px; }
     #menu li a{font-size:15px}
 }
-@media only screen and (max-width: 130px){
+@media only screen and (max-width: 480px){
     .our-team .team-info{ bottom: 65px; }
     #menu li a{font-size:10px}
 }
