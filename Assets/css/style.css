@@ -229,7 +229,7 @@
 }
 @media only screen and (max-width: 780px){
     .our-team .social-icon{ right: 25px; }
-    .our-team .team-info{ bottom: 30px; }
+    .our-team .team-info{ bottom: 80px; }
     #menu li a{font-size:15px}
 }
 @media only screen and (max-width: 480px){
