@@ -238,6 +238,11 @@
 	.our-team .description{margin-top:5px;}
     #menu li a{font-size:10px}
 	#nav{ height:50px;}
+	#name #post #arm{
+        margin-left:20px;
+        margin-top:10px ;
+        font-size:8px ;
+        font-color:white;
 }
 @media only screen and (max-width: 130px){
     .dropdown_1column, 
@@ -617,4 +622,27 @@
 	.mi-slider nav {
 		display: none;
 	}
+}
+
+	.anchors {
+    padding:0px;
+    margin-bottom:2px;
+    margin-top: 2px;
+    height:100px;
+    width:100px;
+    
+}
+
+.anchors:hover{
+    border: 2px solid green;
+    box-sizing: border-box;
+}
+
+#btn{
+    border:none;
+    padding:0;
+}
+#btn:hover{
+    border: 2px solid green;
+    box-sizing: border-box;
 }
