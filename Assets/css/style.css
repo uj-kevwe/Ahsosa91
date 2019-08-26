@@ -235,6 +235,7 @@
 }
 @media only screen and (max-width: 480px){
     .our-team .team-info{ /*bottom: 65px;*/ margin-top:0px; }
+	.our-team .description{margin-top:5px;}
     #menu li a{font-size:10px}
 }
 @media only screen and (max-width: 130px){
