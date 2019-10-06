@@ -288,7 +288,7 @@ and open the template in the editor.
                                                 Facebook <i class = "fa fa-facebook"></i>
                                             </td>
                                             <td style="width:70%;">
-                                                <a href ="" id = "fb"></a>
+                                                <a href ="" id = "fb"><span id="fb_handle"></span></a>
                                             </td>
                                         </tr>
                                         <tr>
@@ -415,6 +415,7 @@ and open the template in the editor.
             document.getElementById("post").innerHTML = element.getAttribute("post");
             document.getElementById("arm").innerHTML = element.getAttribute("arm");
             var facebooklink = element.getAttribute("facebook");
+            document.getElementById("fb_handle").innerHTML = n.concat(" facebook handle");
             document.getElementById("fb").href = facebooklink;
             document.getElementById("phone").innerHTML = element.getAttribute("phone");
 
