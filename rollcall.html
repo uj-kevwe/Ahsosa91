@@ -310,7 +310,7 @@ and open the template in the editor.
                                     <table class="table-responsive" tyle="float:left; font-size:12px">
                                         <thead>
                                             <tr>
-                                                <th colspan="2">Business Name</th>
+                                                <th colspan="2"><span id="bus_name"></span></th>
                                               
                                             </tr>
                                         </thead>
@@ -442,6 +442,9 @@ and open the template in the editor.
             document.getElementById("fb_handle").innerHTML = n.concat(" facebook handle");
             document.getElementById("fb").href = facebooklink;
             document.getElementById("phone").innerHTML = element.getAttribute("phone");
+            document.getElementById("bus_name").innerHTML = element.getAttribute("business_name");
+            document.getElementById("bus_info").innerHTML = element.getAttribute("business_info");
+            document.getElementById("bus_contact").innerHTML = element.getAttribute("business_link");
 
         }
 
