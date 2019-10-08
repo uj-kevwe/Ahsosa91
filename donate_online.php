@@ -113,7 +113,7 @@ and open the template in the editor.
                                 <tr>
                                     <td style="width:20%"><a href="">Newsroom</a></td>
                                     <td style="width:20%"><a href="gallery.html">Photo gallery</a></td>
-                                    <td style="width:20%"><a href="donate_online.php">Donate</a></td>
+                                    <td style="width:20%"><a href="donate_online.html">Donate</a></td>
                                     <td rowspan="3" style="width:40%; background-color: lightgreen; color:blue">
                                         <a href="" style="color:blue"><i class="fa fa-facebook">&nbsp;&nbsp;AHSOSA '91 facebook page</i></a><br>
                                         <a href="" style="color:blue"><i class="fa fa-twitter">&nbsp;&nbsp;AHSOSA '91 twitter page</i></a><br>
@@ -131,7 +131,7 @@ and open the template in the editor.
                                 <tr>
                                     <td style="width:20%"><a href="">Members Only</a></td>
                                     <td style="width:20%"><a href="">Biz Connect</a></td>
-                                    <td style="width:20%"><a href="">Membership dues</a></td>
+                                    <td style="width:20%"><a href="donate_online.html">Membership dues</a></td>
 
                                 </tr>
                             </table>
@@ -182,7 +182,7 @@ and open the template in the editor.
                 <div class="col-lg-3 col-md-3 col-sm-12 colxs-12">
                     <span style="color:white; font-weight: bolder">Contact Quick Links</span><br>
                     <hr style="border-color:green; width:100px; height:5px; float:left; border-color:green;margin-bottom:0"> <br><br>
-                    <p><i class="fa fa-credit-card" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="donate_online.php">Donate Online</a></p>
+                    <p><i class="fa fa-credit-card" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="donate_online.html">Donate Online</a></p>
                     <hr style="border-color:gray; width:80%; float:left;
                         margin-top:0; margin-bottom:0"><br>
                     <p><i class="fa fa-picture-o" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="photo-gallery.html">Photo Gallery</a></p>
@@ -191,7 +191,7 @@ and open the template in the editor.
                     <p><i class="fa fa-video-camera" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="video-gallery.html">Video Gallery</a></p>
                     <hr style="border-color:gray; width:80%; float:left;
                         margin-top:0; margin-bottom:0"><br>
-                    <p><i class="fa fa-money" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="donate_online.php">pay Membership Dues</a></p>
+                    <p><i class="fa fa-money" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="donate_online.html">pay Membership Dues</a></p>
                     <hr style="border-color:gray; width:80%; float:left;
                         margin-top:0; margin-bottom:0"><br>
                     <p><i class="fa fa-question-circle" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;<a href="faq.html">FAQs</a></p>
