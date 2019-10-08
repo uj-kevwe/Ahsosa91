@@ -132,15 +132,15 @@ and open the template in the editor.
             </div> 
         </header>
         <section>
-            <div style="margin-top:200px;">
+            <div class="form-group" style="margin-top:200px;">
                 <center>
-                  <form>
-                    <select>
+                  <form class = "form-responsive">
+                    <select name = "payment">
                       <option>Membership Dues</option>
                       <option>Donations</option>
                      </select><br>
-                      <label>Amount</label>
-                        <input type = "number" name="amount"><br>
+                      <label for = "amount">Amount</label>
+                        <input class="form-control" type = "number" id="amount" name="amount"><br>
                         <input type = "button" name = "pay" value = "Pay Online">
                    </form>
                 </center>
