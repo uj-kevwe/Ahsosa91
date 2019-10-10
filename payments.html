@@ -27,6 +27,36 @@ and open the template in the editor.
         <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
         <link rel="stylesheet" href="Assets/css/style.css">
         <title>Abesan High School - 1991 Set</title>
+        
+        <script>
+            function payWithPaystack(){
+            var handler = PaystackPop.setup({
+            key: 'pk_test_86d32aa1nV4l1da7120ce530f0b221c3cb97cbcc',
+            email: 'customer@email.com',
+            amount: 10000,
+            currency: "NGN",
+            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            firstname: 'Stephen',
+            lastname: 'King',
+            // label: "Optional string that replaces customer email"
+            metadata: {
+                custom_fields: [ {
+                    display_name: "Mobile Number",
+                    variable_name: "mobile_number",
+                    value: "+2348012345678"
+                }]
+            },
+            callback: function(response){
+                alert('success. transaction ref is ' + response.reference);
+            },
+            onClose: function(){
+                alert('window closed');
+            }
+           });
+        handler.openIframe();
+      }
+    </script>
+        
     </head>
     <body style="background-color:lightgreen; font-family: Arial">
         <header style="position:fixed;z-index: 1; top:0; background-color:lightgreen; width:100%; padding-top: 1vw;
@@ -135,13 +165,14 @@ and open the template in the editor.
             <center>
                 <div class="form-group" style="margin-top:100px; width:30%; background-color:white; border-color:green; padding:20px;">
                   <form class = "form-responsive">
-                    <select name = "payment">
-                      <option>Membership Dues</option>
-                      <option>Donations</option>
-                     </select><hr>
-                      <label for = "amount" style="margin-top:20px">Amount</label>
+                      <script src="https://js.paystack.co/v1/inline.js"></script>
+                        <select name = "payment">
+                            <option>Membership Dues</option>
+                            <option>Donations</option>
+                        </select><hr>
+                        <label for = "amount" style="margin-top:20px">Amount</label>
                         <input class="form-control" type = "number" id="amount" name="amount" style = "width:40%"><br>
-                        <input type = "button" name = "pay" value = "Pay Online">
+                        <button name = "pay" onclick="payWithPaystack()">Pay Online </button>
                    </form>
                 </div>
             </center>
