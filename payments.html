@@ -137,44 +137,15 @@ and open the template in the editor.
         <section>
             <center>
                 <div class="form-group" style="margin-top:100px; width:30%; background-color:white; border-color:green; padding:20px;">
-                  <form class = "form-responsive">
-                      <script src="https://js.paystack.co/v1/inline.js"></script>
+                  <form action="pay.php" method="post" class = "form-responsive">
                         <select name = "payment">
                             <option>Membership Dues</option>
                             <option>Donations</option>
                         </select><hr>
                         <label for = "amount" style="margin-top:20px">Amount</label>
                         <input class="form-control" type = "number" id="amount" name="amount" style = "width:40%"><br>
-                        <button name = "pay" onclick="payWithPaystack()">Pay Online </button>
+                        <button name = "pay">Pay Online </button>
                    </form>
-                    <script>
-            function payWithPaystack(){
-            var handler = PaystackPop.setup({
-            key: 'pk_test_1e8c2255a81d407bf9a12f75bec0e79f9b414b4b',  
-            email: 'uj.kevwe@gmail.com',
-            amount: document.getElementById('amount'),
-            currency: "NGN",
-            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-            firstname: 'Urijah',
-            lastname: 'Omiunu',
-            // label: "Optional string that replaces customer email"
-            metadata: {
-                custom_fields: [ {
-                    display_name: "Mobile Number",
-                    variable_name: "mobile_number",
-                    value: "07065956369"
-                }]
-            },
-            callback: function(response){
-                alert('success. transaction ref is ' + response.reference);
-            },
-            onClose: function(){
-                alert('window closed');
-            }
-           });
-        handler.openIframe();
-      }
-    </script>
                 </div>
             </center>
         </section>
