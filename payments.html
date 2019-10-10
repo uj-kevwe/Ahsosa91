@@ -28,34 +28,7 @@ and open the template in the editor.
         <link rel="stylesheet" href="Assets/css/style.css">
         <title>Abesan High School - 1991 Set</title>
         
-        <script>
-            function payWithPaystack(){
-            var handler = PaystackPop.setup({
-            key: 'pk_test_1e8c2255a81d407bf9a12f75bec0e79f9b414b4b',  
-            email: 'uj.kevwe@gmail.com',
-            amount: document.getElementById('amount'),
-            currency: "NGN",
-            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
-            firstname: 'Urijah',
-            lastname: 'Omiunu',
-            // label: "Optional string that replaces customer email"
-            metadata: {
-                custom_fields: [ {
-                    display_name: "Mobile Number",
-                    variable_name: "mobile_number",
-                    value: "07065956369"
-                }]
-            },
-            callback: function(response){
-                alert('success. transaction ref is ' + response.reference);
-            },
-            onClose: function(){
-                alert('window closed');
-            }
-           });
-        handler.openIframe();
-      }
-    </script>
+        
         
     </head>
     <body style="background-color:lightgreen; font-family: Arial">
@@ -174,6 +147,34 @@ and open the template in the editor.
                         <input class="form-control" type = "number" id="amount" name="amount" style = "width:40%"><br>
                         <button name = "pay" onclick="payWithPaystack()">Pay Online </button>
                    </form>
+                    <script>
+            function payWithPaystack(){
+            var handler = PaystackPop.setup({
+            key: 'pk_test_1e8c2255a81d407bf9a12f75bec0e79f9b414b4b',  
+            email: 'uj.kevwe@gmail.com',
+            amount: document.getElementById('amount'),
+            currency: "NGN",
+            ref: ''+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+            firstname: 'Urijah',
+            lastname: 'Omiunu',
+            // label: "Optional string that replaces customer email"
+            metadata: {
+                custom_fields: [ {
+                    display_name: "Mobile Number",
+                    variable_name: "mobile_number",
+                    value: "07065956369"
+                }]
+            },
+            callback: function(response){
+                alert('success. transaction ref is ' + response.reference);
+            },
+            onClose: function(){
+                alert('window closed');
+            }
+           });
+        handler.openIframe();
+      }
+    </script>
                 </div>
             </center>
         </section>
